@@ -93,3 +93,43 @@ main > form > section#signup {
     font-size: 1em;
     text-decoration: none;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color5);
+    color: white;
+    padding: 10px;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration-color: var(--color3);
+    font-size: 1em;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    header > img {
+        width: 70px;
+    }
+
+    .buttonsForm {
+        width: 300px;
+        font-size: 1em;
+    }
+
+    footer > p {
+        font-size: 0.8em;
+    }
+}
