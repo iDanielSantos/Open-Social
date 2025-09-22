@@ -151,11 +151,13 @@ main > section#feed > div#postInteractions > img {
     width: 40px;
     padding: 5px;
     border-radius: 8px;
+    transition: transform 0.2s ease;
 }
 
 main > section#feed > div#postInteractions > img:hover {
     cursor: pointer;
-    border: 2px solid black;
+    border: 1px solid black;
+    transform: scale(1.3, 1.3);
 }
 
 main > section#recommendations {
@@ -209,6 +211,7 @@ footer > p > a {
     text-decoration-color: var(--color3);
     font-style: italic;
 }
+
 
 @media (max-width: 1300px) {
     h1 {
@@ -267,5 +270,4 @@ footer > p > a {
         margin: auto;
         margin-top: 90px;
     }
-
 }
