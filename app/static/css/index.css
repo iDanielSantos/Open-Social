@@ -156,8 +156,19 @@ main > section#feed > div#postInteractions > img {
 
 main > section#feed > div#postInteractions > img:hover {
     cursor: pointer;
-    border: 1px solid black;
     transform: scale(1.3, 1.3);
+}
+
+#btLikePost:hover {
+    content: url('../images/icons/like-color.png');
+}
+
+#btCommentPost:hover {
+    content: url('../images/icons/comment-color.png');
+}
+
+#btSharePost:hover {
+    content: url('../images/icons/share-color.png');
 }
 
 main > section#recommendations {
