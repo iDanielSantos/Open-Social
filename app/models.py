@@ -24,6 +24,7 @@ def add_user_to_db(username, display_name, password):
     with get_db_connection() as conn:
         with conn.cursor() as cur:
             cur.execute("INSERT INTO users (username, display_name, password_hash) VALUES (?, ?, ?)", (username, display_name, password_hash))
+            conn.commit()
 
 def check_password(password_hash, password):
     return bcrypt.check_password_hash(password_hash, password)
