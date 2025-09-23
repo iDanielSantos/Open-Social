@@ -16,11 +16,19 @@
     </header>
 
     <main>
-        <form action="#">
+        <form method="POST" action="/signin">
             <h3>Login</h3>
             <section id="signin">
                 <input type="text" class="buttonsForm" name="username" placeholder="Nome de usuário">
                 <input type="password" class="buttonsForm" name="password" placeholder="Senha">
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        <br>
+                        <div class="{{ messages[0][0] }}" style="color: red;">{{ messages[0][1] }}</div>
+                    {% endif %}
+                {% endwith %}
+
                 <input class="buttonsForm" id="btSignin" type="submit" value="Entrar">
             </section>
         </form>
