@@ -1,6 +1,6 @@
 from flask_bcrypt import Bcrypt
 import mariadb
-import config as Config
+from config import Config
 
 bcrypt = Bcrypt()
 
