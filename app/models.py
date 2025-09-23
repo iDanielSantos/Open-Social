@@ -21,3 +21,12 @@ def get_user_by_username(username):
     cur.close()
     conn.close()
     return user
+
+def add_user_to_db(username, display_name, password):
+    password_hash = bcrypt.generate_password_hash(password).decode('utf-8') 
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute("INSERT INTO users (username, display_name, password_hash) VALUES (?, ?, ?)", (username, display_name, password_hash))
+    conn.commit()
+    cur.close()
+    conn.close()
