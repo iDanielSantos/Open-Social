@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #39D5AB;
+    --color2: #4AAA90;
+    --color3: #19FFC0;
+    --color4: #4D8072;
+    --color5: #415550;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(to top, var(--color4), var(--color2));
+}
+
+header > img {
+    margin-top: 20px;
+    width: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 100vh;
+}
+
+main > section#userProfile > h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+main > section#userProfile > label > img#profilePhoto {
+    margin-top: 50px;
+    width: 60px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    margin-left: 80px;
+}
+
+main > section#userProfile > label > img#profilePhoto:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+main > section > input#userPhotoProfile {
+    display: none;
+}
+
+main > section#userProfile {
+    background-color: var(--color2);
+    width: 230px;
+    border-right: 2px solid black;
+}
+
+main > section#userProfile > nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section#userProfile > nav > ul:hover {
+    cursor: pointer;
+}
+
+main > section#userProfile > nav > ul > li > a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+    border-radius: 8px;
+}
+
+main > section#userProfile > nav > ul > li {
+    padding: 15px;
+}
+
+main > section#userProfile > nav > ul > li:hover {
+    background-color: var(--color5);
+}
+
+main > section#userCreatePost > h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+main > section#userCreatePost {
+    margin-top: 30px;
+    max-width: 500px;
+}
+
+main > section#userCreatePost > form > textarea#mensagePost {
+    margin-top: 20px;
+    width: 500px;
+    height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 20px;
+    text-align: justify;
+    background-color: #eeebeb;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+main > section#userCreatePost > form {
+    text-align: center;
+}
+
+main > section#userCreatePost > form > div {
+    text-align: left;
+}
+
+main > section#userCreatePost > form > div > img#sendPhoto {
+    margin-top: 10px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+main > section#userCreatePost > form > div > img#selectEmoji {
+    margin-top: 10px;
+    width: 34px;
+}
+
+main > section#userCreatePost > form > div > img {
+    transition: transform 0.3s ease;
+}
+
+main > section#userCreatePost > form > div > img:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+#btSendPost {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    border-radius: 10px;
+    background-color: var(--color1);
+    transition: transform 0.3s ease;
+}
+
+#btSendPost:hover {
+    cursor: pointer;
+    transform: scale(1.03, 1.03);
+}
+
+main > section#recommendations {
+    border-left: 2px solid black;
+    width: 230px;
+    text-align: center;
+    background-color: var(--color2);
+}
+
+main > section#recommendations > nav > ul > li > a {
+    color: white;
+}
+
+main > section#recommendations > h3 {
+    margin-top: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+}
+
+main > section#recommendations > nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main > section#recommendations > nav > ul > li > a > img.people {
+    width: 60px;
+    border-radius: 50px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--color5);
+    padding: 8px;
+}
+
+footer > p {
+    font-size: 1em;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration-color: var(--color3);
+    font-style: italic;
+}
+
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    header {
+        width: 100%;
+        position: fixed;
+        padding-top: 5px;
+    }
+
+    header > img {
+        width: 75px;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    main > section#userProfile {
+        display: none;
+    }
+
+    main > section#recommendations {
+        display: none;
+    }
+    
+    main >section#userCreatePost > h2 {
+        margin: 0;
+        margin-top: 130px;
+        font-size: 35px;
+        text-align: left;
+        text-align: center;
+    }
+
+    main > section#userCreatePost > form > textarea#mensagePost {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    main > section#userCreatePost > form > div > img#sendPhoto {
+        margin-left: 10px;
+        width: 25px;
+    }
+
+    main > section#userCreatePost > form > div > img#selectEmoji {
+        width: 29px;
+    }
+
+    #btSendPost {
+        width: 298px;
+        font-size: 16px;
+    }
+
+    #btSendPost:hover {
+        transform: scale(1.01, 1.01);
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    footer > p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,1 @@
+// window.alert("Você é livre para postar o que quiser, contanto que mantenha sempre o respeito :)")

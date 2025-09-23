@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Social</title>
-    <link rel="stylesheet" href="../static/css/index.css">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="../static/css/create-post.css">
 </head>
 
 <body>
@@ -30,21 +30,17 @@
             </nav>
         </section>
 
-        <section id="feed">
-            <h2>Post</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, provident. Illum libero praesentium
-                deserunt consequuntur odio vitae corporis iure omnis magnam temporibus a maxime est, voluptates animi.
-                Fuga, veniam sequi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat repudiandae
-                laudantium saepe libero, aliquid esse omnis sint unde quas, deserunt vero ullam? Suscipit voluptatem
-                quos incidunt facilis ex exercitationem tenetur! Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Voluptatibus, deleniti nulla, fuga molestiae cum ipsum, dolor enim aut blanditiis odio magni?
-                Debitis, numquam nulla dignissimos ipsum dolore amet earum veritatis!</p>
-            <img id="postImage" src="img/open-social.png" alt="">
-            <div id="postInteractions">
-                <img src="../static/images/icons/like.png" alt="Curtir">
-                <img src="../static/images/icons/comment.png" alt="Comentar">
-                <img src="../static/images/icons/share.png" alt="Compartilhar">
-            </div>
+        <section id="userCreatePost">
+            <h2>Criar Postagem</h2>
+            <form>
+                <textarea name="mensagePost" id="mensagePost" placeholder="Estou pensando em..."></textarea>
+                <div>
+                    <img src="../static/images/icons/user-post-icons/send-photo.png" id="sendPhoto" alt="Enviar Foto">
+                    <img src="../static/images/icons/user-post-icons/select-emoji.png" id="selectEmoji" alt="Selecionar Emoji">
+                </div>
+                <button id="btSendPost">Publicar</button>
+            </form>
+            
         </section>
 
         <section id="recommendations">
@@ -68,7 +64,8 @@
             reservados.</p>
     </footer>
 
-    <script src="../static/js/index.js"></script>
+    <script src="../static/js/create-post.js"></script>
+    <script src="../static/js/responsive-creat-post.js"></script>
 </body>
 
 </html>
