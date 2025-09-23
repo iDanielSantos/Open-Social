@@ -30,3 +30,6 @@ def add_user_to_db(username, display_name, password):
     conn.commit()
     cur.close()
     conn.close()
+
+def check_password(password_hash, password):
+    return bcrypt.check_password_hash(password_hash, password)
