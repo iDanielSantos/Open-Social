@@ -25,7 +25,7 @@ def signin():
                 session['username'] = username
                 return redirect(url_for('main.home'))
 
-        flash('Usu·rio ou Senha incorretos', 'danger')
+        flash('Usu√°rio ou Senha incorretos', 'danger')
 
     return render_template('auth/signin.html')
 
@@ -39,11 +39,11 @@ def signup():
         confirm_password = request.form['confirm_password']
 
         if get_user_by_username(username):
-            flash('AlguÈm j· usa esse username.', 'danger')
+            flash('Algu√©m j√° usa esse username.', 'danger')
             return redirect(url_for('auth.signup'))
 
         if password != confirm_password:
-            flash('As senhas n„o coincidem.', 'danger')
+            flash('As senhas n√£o coincidem.', 'danger')
             return redirect(url_for('auth.signup'))
 
         add_user_to_db(username, display_name, password)
