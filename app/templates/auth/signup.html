@@ -16,13 +16,21 @@
     </header>
 
     <main>
-        <form action="#">
+        <form method="POST" action="/signup" >
             <section id="signup">
                 <h3>Criar conta</h3>
                 <input type="text" class="buttonsForm" name="username" placeholder="Nome de Usuário" required>
                 <input type="text" class="buttonsForm" name="display_name" placeholder="Nome de Exibição" required>
                 <input type="password" class="buttonsForm" name="password" placeholder="Senha" required>
                 <input type="password" class="buttonsForm" name="confirm_password" placeholder="Confirme sua senha" required>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        <br>
+                        <div class="{{ messages[0][0] }}" style="color: red;">{{ messages[0][1] }}</div>
+                    {% endif %}
+                {% endwith %}
+
                 <input class="buttonsForm" id="btSignup" type="submit" value="Criar Conta">
             </section>
         </form>
