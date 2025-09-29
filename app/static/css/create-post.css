@@ -54,61 +54,72 @@ main {
     height: 100vh;
 }
 
-main > section#userProfile > h3 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 25px;
-}
-
-main > section#userProfile > label > img#profilePhoto {
-    margin-top: 50px;
-    width: 60px;
-    border-radius: 50px;
-    transition: transform 0.3s ease;
-    margin-left: 80px;
-}
-
-main > section#userProfile > label > img#profilePhoto:hover {
-    cursor: pointer;
-    transform: scale(1.1, 1.1);
-}
-
-main > section > input#userPhotoProfile {
-    display: none;
-}
-
-main > section#userProfile {
-    background-color: var(--color2);
-    width: 230px;
+main > section#userProfile > nav {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
     border-right: 2px solid black;
+    background-color: var(--color2);
+    height: 100%;
+}
+
+main > section#userProfile > nav > button#btMenu {
+    visibility: hidden;
+    margin-top: 15px;
+    margin-left: 90px;
+    width: 40px;
+    font-size: 2em;
+    border-radius: 5px;
+    border: none;
+}
+
+main > section#userProfile > nav > button#btMenu:hover {
+    cursor: pointer;
 }
 
 main > section#userProfile > nav > ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 12px;
 }
 
-main > section#userProfile > nav > ul:hover {
-    cursor: pointer;
+main > section#userProfile > nav > ul > li > img {
+    width: 60px;
+    margin-left: 74px;
+    margin-bottom: -30px;
 }
+
+main > section#userProfile > nav > ul > li > span {
+    margin-left: 45px;
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+.userItems {
+    margin-bottom: 20px;
+    background-color: var(--color2);
+}
+
+main > section#userProfile > nav > ul > li.optionsItems {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition-duration: 0.5s;
+}
+
+main > section#userProfile > nav > ul > li.optionsItems:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
 
 main > section#userProfile > nav > ul > li > a {
     text-decoration: none;
+    color: white;
     font-size: 1em;
     font-weight: bold;
-    text-shadow: 0px 1px 1px black;
-    color: white;
-    border-radius: 8px;
-}
-
-main > section#userProfile > nav > ul > li {
-    padding: 15px;
-}
-
-main > section#userProfile > nav > ul > li:hover {
-    background-color: var(--color5);
+    text-shadow: 1px 1px 1px black;
+    margin-left: 20px;
 }
 
 main > section#userCreatePost > h2 {
@@ -183,25 +194,25 @@ main > section#userCreatePost > form > div > img:hover {
     transform: scale(1.03, 1.03);
 }
 
-main > section#recommendations {
+main > section#profileSuggestions {
     border-left: 2px solid black;
     width: 230px;
     text-align: center;
     background-color: var(--color2);
 }
 
-main > section#recommendations > nav > ul > li > a {
+main > section#profileSuggestions > nav > ul > li > a {
     color: white;
 }
 
-main > section#recommendations > h3 {
+main > section#profileSuggestions > h3 {
     margin-top: 50px;
     font-size: 20px;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px black;
 }
 
-main > section#recommendations > nav > ul {
+main > section#profileSuggestions > nav > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,7 +224,7 @@ main > section#recommendations > nav > ul {
     gap: 20px;
 }
 
-main > section#recommendations > nav > ul > li > a > img.people {
+main > section#profileSuggestions > nav > ul > li > a > img.people {
     width: 60px;
     border-radius: 50px;
 }
@@ -261,7 +272,7 @@ footer > p > a {
         display: none;
     }
 
-    main > section#recommendations {
+    main > section#profileSuggestions {
         display: none;
     }
     
