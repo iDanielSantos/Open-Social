@@ -17,16 +17,17 @@
 
     <main>
         <section id="userProfile">
-            <label for="userPhotoProfile"><img src="../static/images/generic-profile.png" id="profilePhoto" alt="Photo de perfil genérica"></label>
-            <input type="file" name="userPhotoProfile" id="userPhotoProfile" accept="image/png, image/jpeg">
-            <h3>User Name</h3>
-            <nav>
-                <ul>
-                    <li><a href="index.html">&#x1F3E0; &nbsp;Início</a></li>
-                    <li><a href="create-post.html">&#x2795; &nbsp;Criar</a></li>
-                    <li><a href="#">&#x1F4AC; &nbsp;Mensagens</a></li>
-                    <li><a href="#">&#x1F514; &nbsp;Notificações</a></li>
-                    <li><a href="#">&#x2699; &nbsp; &nbsp;Configurações</a></li>
+            <button id="btMenu">&#x2630;</button>
+
+            <nav>                
+                <ul id="navitationMenu">
+                    <li class="userItems"><img src="../static/images/generic-profile.png" id="profilePhoto" alt="Photo de perfil genérica"></li>
+                    <li class="userItems"><span>User Name</span></li>
+                    <li class="optionsItems"><a href="index.html">&#x1F3E0; &nbsp;Início</a></li>
+                    <li class="optionsItems"><a href="create-post.html">&#x2795; &nbsp;Criar</a></li>
+                    <li class="optionsItems"><a href="#">&#x1F4AC; &nbsp;Mensagens</a></li>
+                    <li class="optionsItems"><a href="#">&#x1F514; &nbsp;Notificações</a></li>
+                    <li class="optionsItems"><a href="#">&#x2699; &nbsp; &nbsp;Configurações</a></li>
                 </ul>
             </nav>
         </section>
@@ -42,14 +43,14 @@
                 Debitis, numquam nulla dignissimos ipsum dolore amet earum veritatis!</p>
             <img id="postImage" src="../static/images/open-social.png" alt="Interagir com a imagem do post">
             <div id="postInteractions">
-                <img src="../static/images/icons/like.png" id="btLikePost" alt="Curtir">
-                <img src="../static/images/icons/comment.png" id="btCommentPost" alt="Comentar">
-                <img src="../static/images/icons/share.png" id="btSharePost" alt="Compartilhar">
+                <a href="#" target="_self"><img src="../static/images/icons/like.png" id="btLikePost" alt="Curtir"></a>
+                <a href="#" target="_self"><img src="../static/images/icons/comment.png" id="btCommentPost" alt="Comentar"></a>
+                <a href="#" target="_self"><img src="../static/images/icons/share.png" id="btSharePost" alt="Compartilhar"></a>
             </div>
         </section>
 
-        <section id="recommendations">
-            <h3>Recomendações</h3>
+        <section id="profileSuggestions">
+            <h3>Sugestões</h3>
             <nav>
                 <ul>
                     <li><a href="#"><img class="people" src="../static/images/generic-profile.png" alt="Pessoa"></a>
@@ -65,8 +66,7 @@
     </main>
 
     <footer>
-        <p>&copy;<a href="https://discord.gg/KbxHEY6f" target="_blank">&#x1F517;Os Guri Software</a>. Todos os direitos
-            reservados.</p>
+        <p>&copy;<a href="https://discord.gg/KbxHEY6f" target="_blank">&#x1F517;Os Guri Software</a>. Todos os direitos reservados.</p>
     </footer>
 
     <script src="../static/js/index.js"></script>
