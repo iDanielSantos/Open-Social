@@ -17,9 +17,15 @@
 }
 
 body {
+<<<<<<< HEAD
   background-image: linear-gradient(to right, var(--color1), var(--color2));
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+=======
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+>>>>>>> aae58798b0c1a5d8afc2bbaece243b6dd7d1350e
 }
 
 h1 {
@@ -47,10 +53,41 @@ header > img {
 }
 
 main {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   background-color: white;
   height: 100%;
+=======
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 100%;
+}
+
+main > section#userProfile > h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+main > section#userProfile > label > img#profilePhoto {
+    margin-top: 50px;
+    width: 60px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    margin-left: 80px;
+}
+
+main > section#userProfile > label > img#profilePhoto:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+main > section > input#userPhotoProfile {
+    display: none;
+>>>>>>> aae58798b0c1a5d8afc2bbaece243b6dd7d1350e
 }
 
 main > section#userProfile {
