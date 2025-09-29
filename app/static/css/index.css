@@ -53,16 +53,14 @@ header > img {
 }
 
 main {
-<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   background-color: white;
   height: 100%;
-=======
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 100%;
 }
 
 main > section#userProfile > h3 {
