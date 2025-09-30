@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Open Social</title>
+    <link rel="shortcut icon" href="../../app/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/base.css">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <img src="../static/images/open-social.png" alt="Open Social">
+        <h1>Open Social</h1>
+    </header>
+
+    <main>
+        <section id="userProfile">
+            <button id="btMenu">&#x2630;</button>
+
+            <nav>                
+                <ul id="navitationMenu">
+                    <li class="userItems"><img src="../static/images/generic-profile.png" id="profilePhoto" alt="Photo de perfil genérica"></li>
+                    <li class="userItems"><span>User Name</span></li>
+                    <li class="optionsItems"><a href="index.html">&#x1F3E0; &nbsp;Início</a></li>
+                    <li class="optionsItems"><a href="create-post.html">&#x2795; &nbsp;Criar</a></li>
+                    <li class="optionsItems"><a href="#">&#x1F4AC; &nbsp;Mensagens</a></li>
+                    <li class="optionsItems"><a href="#">&#x1F514; &nbsp;Notificações</a></li>
+                    <li class="optionsItems"><a href="#">&#x2699; &nbsp; &nbsp;Configurações</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        {% block content %}{% endblock %}
+
+        <section id="profileSuggestions">
+            <h3>Sugestões</h3>
+            <nav>
+                <ul>
+                    <li><a href="#"><img class="people" src="../static/images/generic-profile.png" alt="Pessoa"></a>
+                    </li>
+                    <li><a href="#"><img class="people" src="../static/images/generic-profile.png" alt="Pessoa"></a>
+                    </li>
+                    <li><a href="#"><img class="people" src="../static/images/generic-profile.png" alt="Pessoa"></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;<a href="https://discord.gg/KbxHEY6f" target="_blank">&#x1F517;Os Guri Software</a>. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../static/js/base.js"></script>
+</body>
+
+</html>

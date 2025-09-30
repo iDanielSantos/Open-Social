@@ -1,70 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% block title %}Create Post{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Post</title>
-    <link rel="shortcut icon" href="../../app/static/images/favicon.ico" type="image/x-icon">
+{% block head %}
     <link rel="stylesheet" href="../static/css/create-post.css">
-</head>
+{% endblock %}
 
-<body>
-    <header>
-        <img src="../static/images/open-social.png" alt="Open Social">
-        <h1>Open Social</h1>
-    </header>
-
-    <main>
-        <section id="userProfile">
-            <nav>                
-                <button id="btMenu">&#x2630;</button>
-
-                <ul>
-                    <li class="userItems"><img src="../static/images/generic-profile.png" id="profilePhoto" alt="Photo de perfil genérica"></li>
-                    <li class="userItems"><span>User Name</span></li>
-                    <li class="optionsItems"><a href="index.html">&#x1F3E0; &nbsp;Início</a></li>
-                    <li class="optionsItems"><a href="create-post.html">&#x2795; &nbsp;Criar</a></li>
-                    <li class="optionsItems"><a href="#">&#x1F4AC; &nbsp;Mensagens</a></li>
-                    <li class="optionsItems"><a href="#">&#x1F514; &nbsp;Notificações</a></li>
-                    <li class="optionsItems"><a href="#">&#x2699; &nbsp; &nbsp;Configurações</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section id="userCreatePost">
-            <h2>Criar Postagem</h2>
-            <form>
-                <textarea name="mensagePost" id="mensagePost" placeholder="Estou pensando em..."></textarea>
-                <div>
-                    <img src="../static/images/icons/user-post-icons/send-photo.png" id="sendPhoto" alt="Enviar Foto">
-                    <img src="../static/images/icons/user-post-icons/select-emoji.png" id="selectEmoji" alt="Selecionar Emoji">
-                </div>
-                <button id="btSendPost">Publicar</button>
-            </form>
-            
-        </section>
-
-        <section id="profileSuggestions">
-            <h3>Sugestões</h3>
-            <nav>
-                <ul>
-                    <li><a href="#"><img class="people" src="../static/images/generic-profile.png" alt="Pessoa"></a>
-                    </li>
-                    <li><a href="#"><img class="people" src="../static/images/generic-profile.png" alt="Pessoa"></a>
-                    </li>
-                    <li><a href="#"><img class="people" src="../static/images/generic-profile.png" alt="Pessoa"></a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy;<a href="https://discord.gg/KbxHEY6f" target="_blank">&#x1F517;Os Guri Software</a>. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-
-</html>
+{% block content %}
+    <section id="userCreatePost">
+        <h2>Criar Postagem</h2>
+        <form>
+            <textarea name="mensagePost" id="mensagePost" placeholder="Estou pensando em..."></textarea>
+            <div>
+                <img src="../static/images/icons/user-post-icons/send-photo.png" id="sendPhoto" alt="Enviar Foto">
+                <img src="../static/images/icons/user-post-icons/select-emoji.png" id="selectEmoji" alt="Selecionar Emoji">
+            </div>
+            <button id="btSendPost">Publicar</button>
+        </form>
+    </section>
+{% endblock %}
