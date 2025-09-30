@@ -125,9 +125,13 @@ main > section#userProfile > nav > ul > li > span {
 }
 
 main > section#userProfile > nav > ul > li.optionsItems {
-  padding-top: 15px;
-  padding-bottom: 15px;
   transition-duration: 0.5s;
+}
+
+main > section#userProfile > nav > ul > li.optionsItems a {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
 }
 
 main > section#userProfile > nav > ul > li.optionsItems:hover {
