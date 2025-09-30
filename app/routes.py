@@ -10,6 +10,11 @@ auth_bp = Blueprint('auth', __name__)
 def home():
     return render_template('index.html')
 
+@main_bp.route('/create-post')
+@login_required
+def create_post():
+    return render_template('create-post.html')
+
 @auth_bp.route('/signin', methods=['GET', 'POST'])
 @anonymous_required
 def signin():
