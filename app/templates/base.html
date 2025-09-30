@@ -24,8 +24,8 @@
                 <ul id="navitationMenu">
                     <li class="userItems"><img src="../static/images/generic-profile.png" id="profilePhoto" alt="Photo de perfil genérica"></li>
                     <li class="userItems"><span>User Name</span></li>
-                    <li class="optionsItems"><a href="index.html">&#x1F3E0; &nbsp;Início</a></li>
-                    <li class="optionsItems"><a href="create-post.html">&#x2795; &nbsp;Criar</a></li>
+                    <li class="optionsItems"><a href="{{ url_for('main.home') }}">&#x1F3E0; &nbsp;Início</a></li>
+                    <li class="optionsItems"><a href="{{ url_for('main.create_post') }}">&#x2795; &nbsp;Criar</a></li>
                     <li class="optionsItems"><a href="#">&#x1F4AC; &nbsp;Mensagens</a></li>
                     <li class="optionsItems"><a href="#">&#x1F514; &nbsp;Notificações</a></li>
                     <li class="optionsItems"><a href="#">&#x2699; &nbsp; &nbsp;Configurações</a></li>
